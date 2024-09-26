@@ -12,6 +12,7 @@ class projekcontroller extends Controller
 {
     public function index(Request $request): View
     {
+        // ini adalah skrip untuk fitur search. Disini bisa dilihat bahwa projek:all() sudah saya hapus
         $search = $request->input('search');
         $query = Projek::query();
 
