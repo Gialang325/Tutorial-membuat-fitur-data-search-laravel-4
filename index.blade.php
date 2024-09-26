@@ -8,10 +8,13 @@
 <body class="bg-light">
     <div class="container mt-5">
         <h1 class="mb-4">Daftar Data Siswa</h1>
+        
+        <!-- ini adalah baris skrip untuk fitur search -->
         <form action="{{ route('projek.index') }}" method="GET" class="form-inline d-flex mb-3">
             <input class="form-control mr-sm-2" type="search" name="search" placeholder="Cari Berdasarkan Nama..." aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
+        
         <a href="{{ route('projek.create') }}" class="btn btn-primary mb-3">Tambah Data Siswa</a>
         <table class="table table-striped table-bordered">
             <thead class="table-dark">
